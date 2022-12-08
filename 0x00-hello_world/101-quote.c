@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
-* main - gives standard error
-* Return: one
-*/
+   * main - prints to the standard error
+   *
+   * Return: one
+   */
 int main(void)
 {
   fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
