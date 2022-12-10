@@ -3,7 +3,8 @@
 #include <stdlib.h>
 /**
 *main - main block
-*Description: print all single digit numbers to base 
+*Description: print all single digit numbers to base
+*ten starting from 0 followed by a new line
 *Return: 0
 */
 int main(void)
@@ -17,3 +18,5 @@ c += 1;
 putchar('\n');
 return (0);
 }
+Footer
+
