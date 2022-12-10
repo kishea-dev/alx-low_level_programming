@@ -13,7 +13,7 @@ int f = '0';
 while (f <= '9')
 {
 putchar(f);
-if (f != 9)
+if (f != '9')
 {
 putchar(',');
 putchar(' ');
