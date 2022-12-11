@@ -1,24 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*main - main block
-*Description: prints all possible 
-*different combinations of two digits.
+*main - prints all possible two digits.
 *Return: (0)
 */
 int main(void)
 {
 	int i;
+	int j;
 
-	for (i = 0; i <= 99; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		putchar((i / 10) + '0');
-		putchar((i % 10) + '0');
-		if (i == 99)
-			break;
-		putchar(',');
-		putchar(' ');
+		for (j = i; j <= '9'; j++)
+		{
+                        if(i != j)
+                        {
+                                putchar(i);
+                                putchar(j);                        
+                                if (i != '8' || j != '9')
+                                {
+                                        putchar(',');
+                                        putchar(' ');
+                                }
+                        }
+		}
 	}
 	putchar('\n');
 	return (0);
 }
+
