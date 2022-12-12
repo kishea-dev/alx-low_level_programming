@@ -6,9 +6,9 @@
 */
 int main(void)
 {
-	char i;
-	char j;
-	char k;
+	int i;
+	int j;
+	int k;
 
 	for (i = '0'; i < '9'; i++)
 	{
@@ -23,7 +23,7 @@ int main(void)
 						putchar(i);
 						putchar(j);
 						putchar(k);
-if (j != '8' || k != '9')
+if (i != '7' || j != '8' || k != '9')
 {
 putchar(',');
 putchar(' ');
