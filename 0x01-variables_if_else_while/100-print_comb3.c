@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 /**
 *main - prints all possible two digits.
 *Return: (0)
