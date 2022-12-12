@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 /**
 *main - prints all possible two digits.
@@ -13,16 +12,16 @@ int main(void)
 	{
 		for (j = i; j <= '9'; j++)
 		{
-                        if(i != j)
-                        {
-                                putchar(i);
-                                putchar(j);                        
-                                if (i != '8' || j != '9')
-                                {
-                                        putchar(',');
-                                        putchar(' ');
-                                }
-                        }
+			if (i != j)
+			{
+				putchar(i);
+				putchar(j);
+				if (i != '8' || j != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
