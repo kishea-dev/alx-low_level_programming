@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	int str[] = {'_','p','u','t','c','h','a','r','\n'};
+	int str[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
 	int i;
 
 	for (i = 0; i < 9; i++)
