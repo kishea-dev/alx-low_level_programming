@@ -14,10 +14,9 @@ void times_table(void)
 		{
 			int result = num1 * num2;
 
-			_putchar(',');
-			_putchar(' ');
-			if (result <= 10)
+			if (result <= 10 && result > 0)
 			{
+				_putchar(',');
 				_putchar(' ');
 			}
 			else
