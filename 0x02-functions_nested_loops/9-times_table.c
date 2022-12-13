@@ -10,11 +10,11 @@ void times_table(void)
 
 	for (num1 = 0; num1 <= 9; num1++)
 	{
-		for (num2 = 0; num2 <= 9; num2++)
+		for (num2 = 1; num2 <= 9; num2++)
 		{
 			int result = num1 * num2;
 
-			if (result <= 10 && result > 0)
+			if (result <= 10)
 			{
 				_putchar(',');
 				_putchar(' ');
