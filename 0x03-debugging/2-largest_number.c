@@ -26,4 +26,3 @@ int largest_number(int first, int second, int third)
 	}
 	return (largest);
 }
-
