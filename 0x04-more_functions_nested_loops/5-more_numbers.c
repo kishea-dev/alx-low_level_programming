@@ -6,26 +6,21 @@
  */
 void more_numbers(void)
 {
-	int i, counter;
+	int count1, count2;
 
-	i = 0;
-	while (i <= 9)
+	count1 = 0;
+	while (count1 < 10)
 	{
-		counter = 0;
-		while (counter <= 14)
+		count2 = 0;
+		while (count2 < 15)
 		{
-			if (counter <= 9)
-			{
-				_putchar('0' + counter);
-			}
-			else
-			{
-				_putchar('0' + counter / 10);
-				_putchar('0' + counter % 10);
-			}
-			counter++;
+			if (count2 > 9)
+				_putchar(count2 / 10 + '0');
+
+			_putchar(count2 % 10 + '0');
+			count2++;
 		}
+		count1++;
 		_putchar('\n');
-		i++;
 	}
 }
