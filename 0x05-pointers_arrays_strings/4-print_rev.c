@@ -9,7 +9,7 @@ void print_rev(char *str)
 {
 	int i;
 
-	i = str_len(str) - 1;
+	i = string_length(str) - 1;
 	while (i >= 0)
 	{
 		_putchar(str[i]);
@@ -19,11 +19,11 @@ void print_rev(char *str)
 }
 
 /**
-  * str_len - finds the length of a string.
+  * string_length - finds the length of a string.
   * Return: len.
   * @pointer: pointer.
   */
-int str_len(char *pointer)
+int string_length(char *pointer)
 {
 	int c = 0;
 

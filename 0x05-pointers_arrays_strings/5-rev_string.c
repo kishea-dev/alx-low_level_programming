@@ -11,7 +11,7 @@ void rev_string(char *str)
 	int length, c;
 	char *begin, *end, temp;
 
-	length = str_len(str);
+	length = string_length(str);
 
 	begin = str;
 	end = str;
@@ -31,11 +31,11 @@ void rev_string(char *str)
 }
 
 /**
-  * str_len - finds the length of a string.
+  * string_length - finds the length of a string.
   * Return: length of c.
   * @pointer: pointer.
   */
-int str_len(char *pointer)
+int string_length(char *pointer)
 {
 	int c = 0;
 

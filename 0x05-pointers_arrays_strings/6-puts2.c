@@ -8,7 +8,7 @@ void puts2(char *str)
 {
 	int i;
 
-	for (i = 0; i < str_len(str); i += 2)
+	for (i = 0; i < string_length(str); i += 2)
 	{
 		_putchar(str[i]);
 	}
@@ -20,7 +20,7 @@ void puts2(char *str)
   * Return: length of c.
   * @pointer: pointer.
   */
-int str_len(char *pointer)
+int string_length(char *pointer)
 {
 	int c = 0;
 

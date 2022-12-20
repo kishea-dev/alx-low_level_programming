@@ -7,19 +7,19 @@ void puts_half(char *str)
 {
 	int m, n, i, j;
 
-	m = str_len(str) / 2;
+	m = string_length(str) / 2;
 
-	if (str_len(str) % 2 == 0)
+	if (string_length(str) % 2 == 0)
 	{
-		for (i = m; i < str_len(str); i++)
+		for (i = m; i < string_length(str); i++)
 		{
 			_putchar(str[i]);
 		}
 	}
-	else if (str_len(str) % 2 != 0)
+	else if (string_length(str) % 2 != 0)
 	{
-		n = (str_len(str) - 1) / 2;
-		for (j = n; j <= str_len(str); j++)
+		n = (string_length(str) - 1) / 2;
+		for (j = n; j <= string_length(str); j++)
 		{
 			_putchar(str[j]);
 		}
@@ -28,11 +28,11 @@ void puts_half(char *str)
 }
 
 /**
-  * str_len - finds the length of a string.
+  * string_length - finds the length of a string.
   * Return: length of c.
   * @pointer: pointer.
   */
-int str_len(char *pointer)
+int string_length(char *pointer)
 {
 	int c = 0;
 
