@@ -6,14 +6,13 @@
  * @s: string
  * Return: length.
  */
-int _strlen(char *s)
+int _strlen(char *pointer)
 {
-	int i;
+	int c = 0;
 
-	while (s[i] != '\0')
+	while (*(pointer + c) != '\0')
 	{
-		i++;
+		c++;
 	}
-
-	return (i);
+	return (c);
 }
