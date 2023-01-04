@@ -7,15 +7,25 @@
  * @c: character to be located.
  * Return: pointer to first occurrence of NULL if no character found.
  */
-char *_strchr(char *s, char c)
+char *_strstr(char *haystack, char *needle)
 {
-	while (*s != '\0')
+	int i;
+	int j;
+
+	for (i = 0; haystack[i] != '\0';)
 	{
-		if (*s == c)
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			return (s);
+			if (needle[j] != haystack[i + j])
+			{
+				break;
+			}
 		}
-		s++;
+	if (needle[j] == '\0')
+	{
+		return (&haystack[i]);
 	}
-	return (0);
+	i++;
+	}
+	return ('\0');
 }
