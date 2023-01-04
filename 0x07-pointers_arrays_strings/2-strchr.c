@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * *_strchr - locates a character in a string.
@@ -7,25 +8,44 @@
  * @c: character to be located.
  * Return: pointer to first occurrence of NULL if no character found.
  */
-char *_strstr(char *haystack, char *needle)
+/**
+ * _strchr - locates a character in a string
+ * @s: the memory area
+ * @c: constant byte
+ *
+ * Return: a pointer when the character is found
+ */
+char *_strchr(char *s, char c)
 {
-	int i;
-	int j;
+	int i = 0;
 
-	for (i = 0; haystack[i] != '\0';)
+	while (s[i] != '\0')
 	{
-		for (j = 0; needle[j] != '\0'; j++)
+		i++;
+		if (s[i] == c)
 		{
-			if (needle[j] != haystack[i + j])
-			{
-				break;
-			}
+			return (&s[i]);
 		}
-	if (needle[j] == '\0')
-	{
-		return (&haystack[i]);
-	}
-	i++;
 	}
 	return ('\0');
+}
+
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char *s = "hello";
+    char *f;
+
+    f = _strchr(s, 'l');
+
+    if (f != NULL)
+    {
+        printf("%s\n", f);
+    }
+    return (0);
 }
