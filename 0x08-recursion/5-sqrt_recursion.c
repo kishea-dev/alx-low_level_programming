@@ -24,5 +24,5 @@ int squareroot(int n, int i)
 		return (n);
 	if (n * n > i)
 		return (-1);
-	return (checker(n + 1, i));
+	return (squareroot(n + 1, i));
 }
