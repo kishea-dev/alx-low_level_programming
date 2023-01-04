@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints chessboard.
+ * print_chessboard - print in the terminal the chessboard
+ * @a: The character to print
  *
- * @a: rows.
- * Return: nothing.
  */
 void print_chessboard(char(*a)[8])
 {
