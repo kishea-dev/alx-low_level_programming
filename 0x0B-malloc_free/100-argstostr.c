@@ -34,7 +34,7 @@ char *argstostr(int argc, char **argv)
 		return (NULL);
 	}
 
-	for (i = j = ia = 0; k < l; j++, k++)
+	for (i = j = k = 0; k < l; j++, k++)
 	{
 		if (argv[i][j] == '\0')
 		{
@@ -43,7 +43,7 @@ char *argstostr(int argc, char **argv)
 			k++;
 			j = 0;
 		}
-		if (ia < l - 1)
+		if (k < l - 1)
 			aout[k] = argv[i][j];
 	}
 	aout[k] = '\0';
