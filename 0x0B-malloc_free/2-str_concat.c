@@ -20,7 +20,7 @@ char *str_concat(char *str1, char *str2)
 	for (i = 0; str1[i] != '\0'; i++)
 		;
 
-	for  (j = 0; s2[j] != '\0'; j++)
+	for  (j = 0; str2[j] != '\0'; j++)
 		;
 
 	strout = malloc(sizeof(char) * (i + j + 1));
@@ -32,12 +32,11 @@ char *str_concat(char *str1, char *str2)
 	}
 
 	for  (k = 0; k < i; k++)
-		strout[k] = s1[k];
+		strout[k] = str1[k];
 
 	limit = j;
 	for (j = 0; j <= limit; k++, j++)
-		strout[k] = s2[j];
+		strout[k] = str2[j];
 
 	return (strout);
 }
-
