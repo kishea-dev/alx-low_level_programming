@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-int printf (const char *__restrict __format, ...)
+int printf(const char *__restrict, ...)
 {
         write(1, "9 8 10 24 75 9\n", 14);
         write(1, "Congratulations, you win the Jackpot!\n", 38);
