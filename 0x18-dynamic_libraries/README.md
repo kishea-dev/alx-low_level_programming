@@ -1,1 +1,2 @@
-# C DYN LIBS
+# C - Dynamic libraries
+--------------------------
