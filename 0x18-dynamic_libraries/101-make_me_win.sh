@@ -1,3 +1,4 @@
 #!/bin/bash
-wget https://github.com/kishea-dev/alx-low_level_programming/blob/e94bce4e864c295764fa17ebc9ce8e09a978aea1/0x18-dynamic_libraries/lib.so -o /tmp/lib.so
-export LD_PRELOAD=/tmp/lib.so
+wget -q -O /tmp/libtest.so https://github.com/MitaliSengupta/holbertonschool-low_level_programming/raw/master/0x17-dynamic_libraries/libtest.so
+export LD_PRELOAD=/tmp/libtest.so
+
